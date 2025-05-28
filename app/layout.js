@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TopBar from "./Components/Topbar/topbar";
+import SideBar from "./Components/SideBar/sideBar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,9 +21,33 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossOrigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        ></link>
+      </head>
+      <body>
+        <TopBar />
+        <div className="layout-container d-flex" style={{ height: "100vh" }}>
+        <SideBar />
+          <div
+            className="content flex-grow-1 "
+            style={{ backgroundColor: "#f8f9fa",overflow:"auto !important" }}
+          >
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
 }
+
