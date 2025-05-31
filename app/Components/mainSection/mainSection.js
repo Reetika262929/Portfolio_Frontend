@@ -2,20 +2,34 @@ import React from 'react'
 
 const MainSection = () => {
   return (
-    <div>
-          <div className="hero-container">
-      <img
-        className="main-img"
-        src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Avatar"
-      />
-      <div className="overlay-text">
-        <p className='name-text'>Reetika Tripathi</p>
-        <h1>I am a <span className="animated-text"></span></h1>
+   <div className="main-section-wrapper">
+      <div className="stars" />
+
+      <div className=" d-flex align-items-center w-100 content-container">
+       
+        <div className='w-50'>
+           <div className='box1 w-20 text-nowrap d-flex align-items-center gap-1'>
+<div>
+  ✌🏻
+  </div>
+
+  <div>
+    Hi There, I am Reetika Tripathi
+  </div>
+        </div>
+          <p style={{ fontSize: '50px', fontWeight: '600', fontFamily: 'ExoSpace' }} className="text-white">
+            A Frontend Engineer. I help startups launch and grow their products
+          </p>
+          <p className="mt-4 text-white">
+            I am a software engineer with more than four years of experience. Recognized as a practical and effective developer, experienced in leading cross-functional teams in a time-pressured setting to complete projects on schedule and within budget.
+          </p>
+        </div>
+        <div className="w-50 d-block m-auto">
+          <img src="https://cdn.pixabay.com/photo/2024/05/02/09/16/web-development-8734249_640.png" />
+        </div>
       </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
 export default MainSection

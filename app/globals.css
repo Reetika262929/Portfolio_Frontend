@@ -29,12 +29,12 @@ font-family: "Roboto", sans-serif !important;
 
 }
 
-.hero-container {
+/* .hero-container {
   position: relative;
   width: 100%;
   max-height: 90vh;
   overflow: hidden;
-}
+} */
 
 .main-img {
   width: 100%;
@@ -47,7 +47,7 @@ font-family: "Roboto", sans-serif !important;
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  color: white;
+  color: black;
   font-size: 2.5rem;
   font-weight: bold;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
@@ -72,3 +72,123 @@ font-family: "Roboto", sans-serif !important;
     content: "Frontend Developer";
   }
 }
+.main-section-wrapper {
+  position: relative;
+  overflow: hidden;
+  /* background: black; */
+  background-image: url("https://www.onyedika.xyz/static/media/index.89d3119228d600788910.svg");
+  /* height: 100vh; */
+  width: 100%;
+  z-index: 0;
+}
+.box1{
+  background: rgba(20, 233, 88, .157);
+    border-radius: 12px;
+    color: #14e956;
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: .05em;
+    margin: 0;
+    width:27rem !important;
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+}
+.stars {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  animation: twinkling 4s infinite ease-in-out alternate;
+  box-shadow:
+    123px 456px white, 234px 789px white, 345px 321px white, 456px 654px white, 567px 987px white,
+    678px 123px white, 789px 234px white, 890px 345px white, 901px 456px white, 100px 567px white,
+    210px 678px white, 320px 789px white, 430px 890px white, 540px 100px white, 650px 210px white,
+    760px 320px white, 870px 430px white, 980px 540px white, 1090px 650px white, 1190px 760px white,
+    50px 50px white, 200px 150px white, 300px 250px white, 400px 350px white, 500px 450px white,
+    600px 550px white, 700px 650px white, 800px 750px white, 900px 850px white, 1000px 950px white,
+    1100px 150px white, 1200px 250px white, 1300px 350px white, 1400px 450px white, 1500px 550px white;
+  /* You can add hundreds more manually or generate via JS */
+}
+
+@keyframes twinkling {
+  0% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+
+/* CONTENT */
+.content-container {
+  position: relative;
+  z-index: 1;
+  padding: 80px 50px;
+  margin-top: 28px;
+}
+
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.animated-name {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.letter {
+  position: relative;
+  font-weight: 800;
+  color: white;
+  overflow: hidden;
+   font-family: "WDXL Lubrifont TC", sans-serif !important;
+   font-size: 200px !important;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.letter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 2s infinite;
+}
+.wdxl-lubrifont-tc-regular {
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+
+

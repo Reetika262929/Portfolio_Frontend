@@ -3,6 +3,7 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TopBar from "./Components/Topbar/topbar";
 import SideBar from "./Components/SideBar/sideBar";
+import SplashScreen from "./Components/SplashScreen/splashScreen";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -36,9 +37,10 @@ export default function RootLayout({ children }) {
         ></link>
       </head>
       <body>
+        <SplashScreen />
         <TopBar />
         <div className="layout-container d-flex" style={{ height: "100vh" }}>
-        <SideBar />
+        {/* <SideBar /> */}
           <div
             className="content flex-grow-1 "
             style={{ backgroundColor: "#f8f9fa",overflow:"auto !important" }}
