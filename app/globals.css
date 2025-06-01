@@ -120,6 +120,91 @@ font-family: "Roboto", sans-serif !important;
   0% { opacity: 0.2; }
   100% { opacity: 1; }
 }
+.github-box{
+      align-items: center;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    height: 9rem;
+    justify-content: space-between;
+    position: relative;
+    width: 25%;
+    background: rgb(51, 51, 51);
+    padding: 40px;
+ transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              background-color 0.4s ease;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.linkedin-box{
+align-items: center;
+    color: rgb(204, 228, 240);
+    cursor: pointer;
+    display: flex;
+    height: 9rem;
+     font-size: 20px;
+    font-weight: 600;
+    justify-content: space-between;
+    width: 25%;
+    background: rgb(0, 119, 181);
+    padding: 0px 30px;
+     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              background-color 0.4s ease;
+}
+.twitter-box{
+    align-items: center;
+    color: rgb(210, 236, 252);
+    cursor: pointer;
+    display: flex;
+     font-size: 20px;
+    font-weight: 600;
+    height: 9rem;
+    justify-content: space-between;
+    width: 25%;
+    background: rgb(29, 161, 242);
+    padding: 0px 30px;
+     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              background-color 0.4s ease;
+}
+.connect-box{
+  background-color: #050810;
+  color:#0c8c34;
+ padding:20px;
+  text-align: center;
+}
+.connect-box p{
+ font-size: 30px;
+  font-weight: 600;
+}
+.telegram-box{
+align-items: center;
+    color: rgb(204, 226, 255);
+    cursor: pointer;
+    display: flex;
+     font-size: 20px;
+    font-weight: 600;
+    height: 9rem;
+    justify-content: space-between;
+    width: 25%;
+    background: rgb(0, 108, 255);
+    padding: 0px 30px;
+     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              background-color 0.4s ease;
+}
+.github-box:hover,
+.linkedin-box:hover,
+.twitter-box:hover,
+.telegram-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
 .email-box{
       background: #0c8c34;
       padding:20px;
