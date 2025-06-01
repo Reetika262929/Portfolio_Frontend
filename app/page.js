@@ -5,6 +5,7 @@ import MainSection from "./Components/mainSection/mainSection";
 import ToolBox from "./Components/ToolingBox/toolBox";
 import Footer from "./Components/Footer/footer";
 import SocialMedia from "./Components/SocialMedia/socialMedia";
+import Quote from "./Components/quote/quote";
 // import styles from "./page.module.css";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
   {/* <TopBar /> */}
   <MainSection />
   <ToolBox />
-
+<Quote />
 <SocialMedia />
   <Footer />
   </>

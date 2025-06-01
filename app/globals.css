@@ -334,6 +334,32 @@ font-weight: 600;
     left: 125%;
   }
 }
+.quote-box{
+  padding:30px;
+  background-color: #050810;
+}
+.quote {
+    position:relative;
+    width:900px;
+    border-radius: 20px;
+    padding:20px;
+    margin:auto;
+    /* margin:20px auto; */
+    text-align: center;
+   
+    font:italic 26px/1.4 Georgia, serif;
+    color:#fff;
+    background-image: url("https://www.onyedika.xyz/static/media/quote.c952ddc0c1361baa3c77.png");
+}
+.quote p{
+   font-size: 30px;
+   font-weight: 600;
+}
+blockquote{
+padding:20px !important;
+margin:0 !important;
+}
 
+blockquote, p {padding:0; margin:0;}
 
 
