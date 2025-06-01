@@ -17,7 +17,7 @@ const Footer = () => {
       </a>
 
       <div className='content-containers text-center'>
-        <p>Built from scratch with 💚. &#169; Copyright 2022, Onyedika.xyz. All Rights Reserved.</p>
+        <p>Built from scratch with 💚.</p>
       </div>
     </>
   )
