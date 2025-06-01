@@ -109,10 +109,24 @@ font-family: "Roboto", sans-serif !important;
     1100px 150px white, 1200px 250px white, 1300px 350px white, 1400px 450px white, 1500px 550px white;
   /* You can add hundreds more manually or generate via JS */
 }
-
+.content-containers{
+  padding:20px;
+  background-color: #050810;
+  color: #0c8c34;
+  font-size: 20px;
+  font-weight: 600;
+}
 @keyframes twinkling {
   0% { opacity: 0.2; }
   100% { opacity: 1; }
+}
+.email-box{
+      background: #0c8c34;
+      padding:20px;
+      text-align: center;
+      color:white;
+      font-size: 20px;
+      font-weight: 600;
 }
 .box-content{
   align-items: center;
